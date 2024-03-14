@@ -1,0 +1,51 @@
+﻿@using FrontToBack.Areas.Admin.ViewModels.ProductViewModels;
+@using FrontToBack.Models;
+@using FrontToBack.ViewModels;
+@model ProductCreateViewModel
+@{
+    ViewData["Title"] = "Create Slider";
+}
+
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Default form</h4>
+                    <p class="card-description">
+                        Basic form layout
+                    </p>
+                    <form class="forms-sample" method="post">
+                        <div class="form-group">
+                            <label for="Title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Title" asp-for="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="Description">Description</label>
+                            <input type="text" class="form-control" id="Description" placeholder="Description" asp-for="Descripton">
+                        </div>
+                        <div class="form-group">
+                            <label for="Price">Price</label>
+                            <input type="text" class="form-control" id="Price" placeholder="Price" asp-for="Price">
+                        </div>
+                        <div class="form-group">
+                            <label for="Rating">Rating</label>
+                            <input type="text" class="form-control" id="Rating" placeholder="Rating" asp-for="Rating">
+                        </div>
+                        <div class="form-group">
+                            <label for="DiscountPercent">DiscountPercent</label>
+                            <input type="text" class="form-control" id="DiscountPercent" placeholder="DiscountPercent" asp-for="DiscountPercent">
+                        </div>
+                        <div class="form-group">
+                            <label for="Image">Image</label>s
+                            <input type="text" class="form-control" id="Image" placeholder="Image" asp-for="Image">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
